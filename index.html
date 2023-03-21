@@ -7,6 +7,8 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    
+    
 </head>
 <body>
     <header>
@@ -14,12 +16,20 @@
             <a href="link-to-our-site" class="logo">
             <img src="./assets/images/logo2.JPG" alt="Coin & Drink">
             </a>
-            <ul class = "navlink">
-                <li class="navitem" id = "home"><a href = "#home">Home</a></li>
-                <li class="navitem" id = "about-us"><a href = "#about-us">About Us</a></li>
-                <li class="navitem" id = "our-team"><a href = "#our-team">Our Team</a></li>
-                <li class="navitem" id = "contact-us"><a href = "#contact-us">Contact Us</a></li>
-            </ul>
+            <ul class="nav nav-pills mb-3" id="ex-with-icons" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab"
+                    aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="fas fa-chart-pie fa-fw me-2"></i>Sales</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab"
+                    aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i class="fas fa-chart-line fa-fw me-2"></i>Subscriptions</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                    aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i>Settings</a>
+                </li>
+              </ul>
         </nav>
     </header>
 
@@ -44,7 +54,27 @@
 
 
   
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    
+
+  <!-- Tabs content -->
+  <div class="tab-content" id="ex-with-icons-content">
+    <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
+      Tab 1 content
+    </div>
+    <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tab-2">
+      Tab 2 content
+    </div>
+    <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
+      Tab 3 content
+    </div>
+  </div>
+  <!-- Tabs content -->
+
+
+
+</body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script> 
     <script src="./assets/js/app.js"></script>
+    
 </body>
 </html>
