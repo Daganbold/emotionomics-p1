@@ -1,0 +1,13 @@
+.select{
+    margin: 40px;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font: normal 18px Arial, Sans-Serif;
+    color: black;
+    border: 1px solid #ccc;
+}
+h1{
+    padding: 10px;
+}
