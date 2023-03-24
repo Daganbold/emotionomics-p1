@@ -2,6 +2,10 @@
 let APIKEY = "2llCfwgKW4oQEdJcS9y7VtaoHJFYb8pG";
 var selectEl = document.getElementById("coinsDropDown");
 var coinEl = document.getElementById("coinChange");
+// added variables (Yung)
+var barRecommendation = document.getElementById("bar-recommendation");
+
+
 
 // Giffy function
 function init() {
@@ -84,6 +88,7 @@ if (selectEl) {
       coinEl.textContent = `Your coin change is ${coinChange} now. Drink Water`;
       console.log("drink water");
     }
+<<<<<<< HEAD
 
   }
 }
@@ -100,10 +105,45 @@ function buttonFunction() {
     
 
   
+=======
+  getRestaurants(coinChange)
+>>>>>>> 628de0fa3df4a90f4795bde378336c40dfbef5fe
   });
 }
 
+// added function within event listener to list restaurants based on bitcoin performance (Yung)
+function getRestaurants(coinChange) {
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'a90221af49mshd73965f4ab53300p17d3b6jsn28792f7388d3',
+      'X-RapidAPI-Host': 'the-fork-the-spoon.p.rapidapi.com'
+    }
+  };
+  let topPrice = 0
+  let lowPrice = 0
+if (coinChange > 1) {
+     topPrice = 100
+     lowPrice = 30
+} else {
+    topPrice = 30
+    lowPrice = 0
+    }
+barRecommendation.innerHTML = ''
+  fetch(`https://the-fork-the-spoon.p.rapidapi.com/restaurants/v2/list?queryPlaceValueCityId=348156&filterPriceEnd=${topPrice}&filterPriceStart=${lowPrice}&pageSize=10&pageNumber=1`, options)
+    .then(response => response.json())
+    .then(response => {
+      for(let i=0; i<5; i++) {
+        barRecommendation.innerHTML += response.data[i].name + `<img class='pics' src= ${response.data[i].mainPhotoSrc}>` + 'Average Price Range: ' + response.data[i].priceRange + '<br>'
+      }
+    // Use the following function if we want to list all restaurants
+    //   response.data.forEach(restaurant => barRecommendation.innerHTML += restaurant.name + `<img src= ${restaurant.mainPhotoSrc}>` + '<br>')
+     
+    // })
+    })
+      .catch(err => console.error(err));
 
+<<<<<<< HEAD
 
 // choose the coin event listener
 selectEl.addEventListener("change", selectCoin);
@@ -114,3 +154,8 @@ document.addEventListener("DOMContentLoaded", init);
 // const myNewCoin = JSON.stringify(myCoin);
 // localStorage.setItem('my-coins', myNewCoin);
 // console.log(myNewCoin);
+=======
+  }
+
+ 
+>>>>>>> 628de0fa3df4a90f4795bde378336c40dfbef5fe
