@@ -5,31 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
-  rel="stylesheet"
-/> -->
+  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    
-    
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+     
 </head>
 <body>
-    <h1>Coin & Bar</h1>
+   <!-- navbar -->
+
+   <!-- <div class="container"> -->
+    <div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="./assets/images/logo.JPG" width="112" height="28" >
+        </a>
     
-    <select class="select" id="coinsDropDown">
+        <a role="button" class="navbar-burger" id = "burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+             
+        </a>
+      </div>
+    
+      <div id="n" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+    
+          <a class="navbar-item">
+            The project
+          </a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              About us
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Our Team
+              </a>
+              <a class="navbar-item">
+                More
+              </a>
+              <a class="navbar-item">
+                Contact us
+              </a>
+             
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Header end -->
+
+<!-- container -->
+    <div class="notification is-primary">
+      <!-- heading -->
+    <h1>Go to the Bar& Drink if your Coin Change is ↑</h1>
+    <div class="select is-info" >
+      <!-- user input as select an option -->
+    <select id="coinsDropDown">
         <option>Select Your Coin</option>
     </select>
-   
+    </div>
+    <!-- image section -->
+    <div class="parent">
+      <img class ="hero" src="./assets/images/beer.jpeg" alt="cheering beer" height="200px" width="500px">
+      <img class ="hero" src="./assets/images/cripto.webp" alt=""height="500px" width="500px">
+    </div>
+          <div id="coinChange" class = "box">
+<!-- show the coin change message & display button here -->
+          </div>
+         
+          <form>
+            <label for="search">Search</label>
+            <input id="search" type="search" />
+            <button id="btnSearch">Go</button>
+          </form>
+          <div ></div>
+          <div class="out"></div>
+         </div>
+  </div>
 
-      
-          <div id="coinChange"></div>
-          <div id="myModal" class="modal">
-    
-    <!-- <script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
-></script> -->
+
     <script src = './assets/js/app.js'></script>
 </body>
 </html>
