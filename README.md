@@ -28,9 +28,9 @@ Our team:
 *Kaleo Dutta-allen
 
 3rd party resources:
-Bulma (https://bulma.io/)
-Giphy API (https://developers.giphy.com/)
-Coinranking API by Coinranking on RapidAPI (https://rapidapi.com/Coinranking/api/coinranking1)
+*Bulma (https://bulma.io/)
+*Giphy API (https://developers.giphy.com/)
+*Coinranking API by Coinranking on RapidAPI (https://rapidapi.com/Coinranking/api/coinranking1)
 
 ## License
 
