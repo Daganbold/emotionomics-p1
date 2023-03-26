@@ -1,41 +1,8 @@
-//variable
+// //variable
 let APIKEY = "2llCfwgKW4oQEdJcS9y7VtaoHJFYb8pG";
-var selectEl = document.getElementById("coinsDropDown");
-var coinEl = document.getElementById("coinChange");
-// added variables (Yung)
-var barRecommendation = document.getElementById("bar-recommendation");
-
-
-
-// Giffy function
-function init() {
-  document.getElementById("btnSearch").addEventListener("click", (event) => {
-    event.preventDefault();
-    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=`;
-    let str = document.getElementById("search").value.trim();
-    url = url.concat(str);
-    console.log(url);
-    fetch(url)
-    .then(response => response.json() )
-    .then(content => {
-      console.log(content.data);
-      console.log("META", content.meta);
-      let fig = document.createElement('figure');
-      let img = document.createElement('img');
-      let fc = document.createElement('figcaption');
-      img.src = content.data[0].images.downsized.url;
-      img.alt = content.data[0].title;
-      fc.textContent = content.data[0].title;
-      fig.appendChild(img);
-      fig.appendChild(fc);
-      let out = document.querySelector('.out');
-      out.insertAdjacentElement('afterbegin', fig);
-    })
-    .catch(err=>{
-      console.error(err);
-    })
-  });
-}
+outEl = document.getElementById("out");
+let selectEl = document.getElementById("coinsDropDown");
+let coinEl = document.getElementById("coinChange");
 
 var options = {
   method: "GET",
@@ -62,100 +29,161 @@ function getData(arrayList) {
   for (let i = 0; i < arrayList.length; i++) {
     let option = document.createElement("option");
     option.setAttribute("value", arrayList[i].change);
-    option.setAttribute("name", arrayList[i].name);
+    option.setAttribute("id", arrayList[i].id);
 
     let optionText = document.createTextNode(arrayList[i].name);
     option.appendChild(optionText);
     selectEl.appendChild(option);
+    
   }
 }
 
+// Get the user click input and display the text and button to show giphy
 if (selectEl) {
   function selectCoin(event) {
     console.log("option selected");
     event.preventDefault();
     let coinChange = event.target.value;
-
-    localStorage.setItem("my-coins", JSON.stringify([coinChange]));
+    coinEl.setAttribute('class','box');
+    outEl.innerHTML=" "
 
     console.log(coinChange);
 
     if (coinChange > 1) {
-      coinEl.textContent = ` Your coin change is ${coinChange} now. Get Your Giphy `;
-      console.log(" Drink Beer....");
-      buttonFunction();
+      coinEl.innerHTML = ` <h2>Your coin change is ${coinChange} now. Get Your Giphy</h2>`;
+      console.log(" change is +");
+      happyButton();
+      
+     
     } else {
-      coinEl.textContent = `Your coin change is ${coinChange} now. Drink Water`;
-      console.log("drink water");
+      coinEl.innerHTML = `<h2>Your coin change is ${coinChange} now. Get Your Giphy</h2>`;
+      console.log("Change is - ");
+      sadButton();
     }
-<<<<<<< HEAD
-
+    saveData()
   }
 }
 
-// button function to get the beer
-function buttonFunction() {
+
+// function to save user data
+function saveData () {
+  // get data from select option
+  var new_data = ' ' + document.getElementById('coinsDropDown').value;
+  // if there is nothing saved at the start then save an empty array
+  if(localStorage.getItem('Price_change')== null){
+    localStorage.setItem('Price_change', '[]');
+  }
+  // get old data and push it to the new data
+  var old_data = JSON.parse(localStorage.getItem('Price_change'));
+  old_data.push(new_data);
+  // save the old and new data to local storage
+  localStorage.setItem('Price_change',JSON.stringify(old_data));
+}
+// function to view data
+function viewData(){
+  if(localStorage.getItem('Price_change') !== null){
+   document.getElementById('coinChange').innerHTML = ` <h2>Your Saved Coin Change History From The Local Storage :</h2> ` + JSON.parse(localStorage.getItem('Price_change'));
+   coinEl.setAttribute('class','box');
+  }
+}
+// function to clear all stored user data in the local s
+function clearData(){
+  localStorage.clear();
+  coinEl.innerHTML = " "
+  coinEl.setAttribute('class','hideDiv');
+}
+
+
+
+// button function to display happy giphy
+function happyButton() {
   let buttonEl = document.createElement("BUTTON");
-  buttonEl.className = "button";
-  let text = document.createTextNode("Get your Beer");
+  buttonEl.className = "button is-success is-outlined";
+  let text = document.createTextNode("Get your Giphy..");
   buttonEl.appendChild(text);
   coinEl.appendChild(buttonEl);
   buttonEl.addEventListener("click", (event) => {
     event.preventDefault();
-    
 
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=happy`;
+    console.log(url);
+    fetch(url)
+      .then((response) => response.json())
+      .then((content) => {
+        console.log(content.data[0]);
+        let imgEl = document.createElement("img");
+        imgEl.setAttribute('class','giphyImage')
+        let figEl = document.createElement("figure");
+        let fcEl = document.createElement("figcaption");
+        imgEl.src = content.data[0].images.downsized.url;
+        imgEl.alt = content.data[0].title;
+        fcEl.textContent = content.data[0].title;
+        figEl.appendChild(imgEl);
+        figEl.appendChild(fcEl);
+        outEl.appendChild(figEl);
+        
+      });
+    outEl.textContent = " ";
+    coinEl.textContent = " ";
+    coinEl.setAttribute('class','hideDiv');
   
-=======
-  getRestaurants(coinChange)
->>>>>>> 628de0fa3df4a90f4795bde378336c40dfbef5fe
   });
 }
 
-// added function within event listener to list restaurants based on bitcoin performance (Yung)
-function getRestaurants(coinChange) {
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'a90221af49mshd73965f4ab53300p17d3b6jsn28792f7388d3',
-      'X-RapidAPI-Host': 'the-fork-the-spoon.p.rapidapi.com'
-    }
-  };
-  let topPrice = 0
-  let lowPrice = 0
-if (coinChange > 1) {
-     topPrice = 100
-     lowPrice = 30
-} else {
-    topPrice = 30
-    lowPrice = 0
-    }
-barRecommendation.innerHTML = ''
-  fetch(`https://the-fork-the-spoon.p.rapidapi.com/restaurants/v2/list?queryPlaceValueCityId=348156&filterPriceEnd=${topPrice}&filterPriceStart=${lowPrice}&pageSize=10&pageNumber=1`, options)
-    .then(response => response.json())
-    .then(response => {
-      for(let i=0; i<5; i++) {
-        barRecommendation.innerHTML += response.data[i].name + `<img class='pics' src= ${response.data[i].mainPhotoSrc}>` + 'Average Price Range: ' + response.data[i].priceRange + '<br>'
-      }
-    // Use the following function if we want to list all restaurants
-    //   response.data.forEach(restaurant => barRecommendation.innerHTML += restaurant.name + `<img src= ${restaurant.mainPhotoSrc}>` + '<br>')
-     
-    // })
-    })
-      .catch(err => console.error(err));
+// button function to display sad giphy
+function sadButton() {
+  let buttonEl = document.createElement("BUTTON");
+  buttonEl.className = "button is-info is-outlined";
+  let text = document.createTextNode("Get your Giphy..");
+  buttonEl.appendChild(text);
+  coinEl.appendChild(buttonEl);
+  buttonEl.addEventListener("click", (event) => {
+    event.preventDefault();
 
-<<<<<<< HEAD
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=sad`;
+    console.log(url);
+    fetch(url)
+      .then((response) => response.json())
+      .then((content) => {
+        // console.log(content.data[0].images);
+        // const newArray = content.data[0].images
+        // const anotherArray = Object.values(newArray)
+        // const moreArray = anotherArray[0].url;
+        // console.log(moreArray)
+        // console.log(anotherArray)
+        // displayGiphy(anotherArray)
+        
+        let imgEl = document.createElement("img");
+        imgEl.setAttribute('class','giphyImage')
+        let figEl = document.createElement("figure");
+        let fcEl = document.createElement("figcaption");
+        imgEl.src = content.data[0].images.downsized.url;
+        imgEl.alt = content.data[0].title;
+        fcEl.textContent = content.data[0].title;
+        figEl.appendChild(imgEl);
+        figEl.appendChild(fcEl);
+        outEl.appendChild(figEl);
+      });
+    outEl.textContent = " ";
+    coinEl.textContent = " ";
+    coinEl.setAttribute('class','hideDiv');
+  });
+}
 
+// function displayGiphy(arrayImg) {
+//   for (let i = 0; i < arrayImg.length; i++) {
+//     let option = document.createElement("img");
+//     option.setAttribute("src", arrayImg[i].url);
+//     console.log(option)
+//    outEl.appendChild(option);
+  
+//   }
+// }
+
+function clearGiphy(){
+  outEl.innerHTML = " ";
+  coinEl.textContent = " ";
+  coinEl.setAttribute('class','hideDiv');
+}
 // choose the coin event listener
 selectEl.addEventListener("change", selectCoin);
-document.addEventListener("DOMContentLoaded", init);
-
-
-// const myCoin = ['a', 'b', 'c', 'd'];
-// const myNewCoin = JSON.stringify(myCoin);
-// localStorage.setItem('my-coins', myNewCoin);
-// console.log(myNewCoin);
-=======
-  }
-
- 
->>>>>>> 628de0fa3df4a90f4795bde378336c40dfbef5fe

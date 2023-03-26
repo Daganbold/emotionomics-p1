@@ -1,96 +1,132 @@
+
 body{
-    background-color: blanchedalmond;
+  width: 100%;
+  margin: 0;
 }
-h1{
-    padding: 10px;
-    font-weight: bold;
-    color:black;
+
+/* h2 styling */
+h2{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
 }
-<<<<<<< HEAD
-.red{
-    background-color:red;
-    padding:5px;
-=======
-html {
-    box-sizing: border-box;
-    height: 100%;
->>>>>>> 628de0fa3df4a90f4795bde378336c40dfbef5fe
+/* heading div with h1 */
+.header{
+  margin-top: 20px;
+  text-align: center;
 }
+/* hero image styling */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/coin.avif");
+  width: 100vw;
+  height: 100vh;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin:auto;
+}
+/* styling for button */
 .button{
+  background-color: rgb(35, 137, 227);
     padding:5px;
-    background-color:rgb(25, 184, 49);
     color: white;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 15px;
     width:200px;
-    margin-left: 5px;
 }
-<<<<<<< HEAD
 .button:hover{
     background-color:white;
-    color:green;
-    border: 2px solid green;
-=======
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
->>>>>>> 628de0fa3df4a90f4795bde378336c40dfbef5fe
+    color:rgb(35, 137, 227);
+    border: 2px solid rgb(35, 137, 227);
 }
+/* display the coin change/button for giphy and user saved data */
 .box{
     margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  gap:30px;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  font-weight:bold ;  
+  box-shadow: 10px 5px 5px rgb(33, 30, 30);
+
 }
 img{
     padding-left:"5px";
+    border-radius: 15px!important;
 }
-.parent{
+
+/* div to hold the button and select option */
+#userInterface{
+  display:flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  gap:30px;
+  flex-wrap: wrap;
+  flex-wrap: wrap; 
+  padding-top:50px;
+}
+/* styling for the giphy display */
+.giphy{
+  display:flex;
+  justify-content: space-around;
+}
+.giphyImage{
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(33, 30, 30);
+  margin-top: 20px;
+  padding: 10px;
+}
+/* set display box none before click event happened */
+ .hideDiv{
+  display:none
+ }
+/* styling for the heading words div */
+.word {
+    color: white;
+    font: 100 normal 2.0em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    font-family: 'Courier New', Courier, monospace;
+    height: 80px;
+  }
+  .dropdown{
     margin-top: 20px;
-    display:flex;
-    justify-content: flex-start;
-    gap:15px;
-    flex-wrap: wrap;
-}
-.hero{
-    border-radius: 15px;
-    box-shadow: 10px 5px 5px rgb(88, 85, 85);
-    
-
-}
-
-/* .parent {
-    position: relative;
-    top: 0;
-    left: 0;
   }
-  .img1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    border: 1px solid #000000;
+  /* div#top.navbar-menu{
+    background-color: rgb(6, 77, 79);
   }
-<<<<<<< HEAD
-  .img2 {
-    position: absolute;
-    top: 100px;
-    left: 400px;
-    border: 1px solid #000000;
+  a.navbar-item{
+    color: white;
+    font-weight: bold;
   } */
-=======
+  div.hero-inner{
+    padding-top: 50px;
+  }
 
+  .footerSection {
+    height:auto; 
+    background-color:#F7C201;
+     text-align: center;
+     font-size: 18px;
+ }
 
-/* added some css elements (Yung)*/
-#barLists {
-    background-color: white;
-}
-
-#barLists h1, #barLists h2 {
-    background-color: white;
-    
-}
-
-.pics {
-    display: flex;
-    height: 250px;
-    width: 350px;
-}
->>>>>>> 628de0fa3df4a90f4795bde378336c40dfbef5fe
+ /* MEDIA QUERIES */
+  @media (max-width: 475px) {
+    .word {
+      text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    font-family: 'Courier New', Courier, monospace;
+      font: 100 normal 1em 'tahoma';
+      height: 40px;
+      margin-bottom:20px;
+    }
+    #userInterface{
+      padding-top: 20px;;
+    }
+    .modal-card{
+      width:400px;
+    }
+  }
