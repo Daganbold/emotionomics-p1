@@ -21,16 +21,16 @@ Once a coin is selected, the user should see the %change of the coin and whether
 ## Credits
 
 Our team:
-*Dandar Ganbold
-*Sonam J Sherpa
-*Walter Craigie
-*Yung in Shin
-*Kaleo Dutta-allen
+* Dandar Ganbold
+* Sonam J Sherpa
+* Walter Craigie
+* Yung in Shin
+* Kaleo Dutta-allen
 
 3rd party resources:
-*Bulma (https://bulma.io/)
-*Giphy API (https://developers.giphy.com/)
-*Coinranking API by Coinranking on RapidAPI (https://rapidapi.com/Coinranking/api/coinranking1)
+* Bulma (https://bulma.io/)
+* Giphy API (https://developers.giphy.com/)
+* Coinranking API by Coinranking on RapidAPI (https://rapidapi.com/Coinranking/api/coinranking1)
 
 ## License
 
