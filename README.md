@@ -7,7 +7,9 @@
 
 ## Emotionomics
 
-Did you your Cryptocurrency just lose all of its value over the span of 2 min and you dont know how to feel?
+Did either of these things happen to you?
+* Did your obscure cryptocurrency finally after 12 years gain value and skyrocket from $0.10/coin to $50,000/coin?
+* Did your cryptocurrency fall from $60,000/coin to $10,000/coin, a loss of 500%?
 Welcome to Emotionomics!
 Our goal is to allow the user to track the %change of a selected coin, and accordingly deliver a GIF to help guide how you should be feeling.
 By tracking the live movement of the value of your selected coin, we calculate either your loss or your gain and randomly select the appropriate GIF.
