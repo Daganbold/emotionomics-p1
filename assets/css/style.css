@@ -119,6 +119,11 @@ a.navbar-item,
   color: black;
   font-weight: bold;
 }
+a.navbar-item:hover, a.navbar-link:hover{
+ text-decoration: underline 4px;
+ color:#00d1b2;
+ text-underline-offset: 5px;
+}
 
 /* padding for inner div of hero div */
 div.hero-inner {
