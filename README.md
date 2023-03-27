@@ -57,8 +57,7 @@ Once a coin is selected, the user should see the %change of the coin and whether
 * Mostly use flexbox properties & Overall user friendly. 
 
 ## JavaScript / JQuery
-* app.js file constructed with pure javascript where modal.js and navbar.js with jQuery.
-* Wrapped the entire code for modal and navbar within the $(document).ready (function(){})
+* app.js file constructed with pure javascript where modal.js and navbar.js constructed with both JS &  jQuery.
 * Decleared variables as needed
 * Created a function to load user input data stored in the local storage 
 * Created a function to save the user input in the local storage.( coin change value & email id)
@@ -67,7 +66,6 @@ Once a coin is selected, the user should see the %change of the coin and whether
 * App.js file focused on display dynamically created html element from user input or out respectively.
 * Modal.js file contains the modal to display the content for about us/ contact us/ our team/ sign up which also includes the function to save user email   into local storage.
 * navbar.js file contains the function to make the hamburger button for small screen, which also includes the function to display the animated heading.
-
 * click event listener function has been added bottom of the file for each user input or interaction for all three files.
 
 
