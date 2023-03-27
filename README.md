@@ -7,7 +7,7 @@
 
 ## Emotionomics
 
-Did either of these things happen to you?
+Has either of these things happen to you?
 * Did your obscure cryptocurrency finally after 12 years gain value and skyrocket from $0.10/coin to $50,000/coin?
 * Did your cryptocurrency fall from $60,000/coin to $10,000/coin, a loss of 500%?
 
