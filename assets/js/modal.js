@@ -1,4 +1,3 @@
-
 var emailInput = document.getElementById("email");
 var textHere = document.getElementById("textHere");
 var sign_button = document.getElementById("signBtn");
