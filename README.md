@@ -8,17 +8,17 @@
 ## Emotionomics
 
 Has either of these things happen to you?
-* Did your obscure cryptocurrency finally after 12 years gain value and skyrocket from $0.10/coin to $50,000/coin?
+* Did your obscure cryptocurrency finally, after 12 years, gain value and skyrocket from $0.10/coin to $50,000/coin?
 * Did your cryptocurrency fall from $60,000/coin to $10,000/coin, a loss of 500%?
 
 Welcome to Emotionomics!
-Our goal is to allow the user to track the %change of a selected coin, and accordingly deliver a GIF to help guide how you should be feeling.
-By tracking the live movement of the value of your selected coin, we calculate either your loss or your gain and randomly select the appropriate GIF.
+Our goal is to allow the user to track the %change of a selected coin, and accordingly deliver a GIF to help guide how they should feel.
+By tracking the live movement of the value of the selected coin, we calculate the %loss or %gain and randomly select the appropriate GIF.
 
 ## How to use 
 
-Simply access our website through this link: ___ 
-Once on the website, just open the drop down menu to find the list of coins and select the coin you would like to track. 
+Simply access the website through this link: ___ 
+Once on the front page, just drop the "select coin" menu to find the list of coins and select the coin the user would like to track. 
 Once a coin is selected, the user should see the %change of the coin and whether they should be happy or sad!
 
 ## Credits
