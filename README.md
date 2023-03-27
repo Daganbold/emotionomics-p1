@@ -125,7 +125,7 @@ SOFTWARE.
 
 ![mobile view with dropdown menu](https://user-images.githubusercontent.com/62633136/227818968-3f14fb53-286c-4814-931c-2ff994e80873.png)
 
-# Github URL:
+# Github URL: https://github.com/Daganbold/project-01
 
-# Deployed Live URL:
+# Deployed Live URL: http://daganbold.github.io/project-01/
 
