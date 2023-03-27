@@ -135,5 +135,5 @@ SOFTWARE.
   https://github.com/Daganbold/project-01
 
 # Deployed Live URL: 
-  http://daganbold.github.io/project-01/
+  https://daganbold.github.io/project-01/
 
