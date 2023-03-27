@@ -62,12 +62,21 @@ SOFTWARE.
 ## Screenshots
 
 * Desktop view with coin select dropdown.
+
 ![desktop view with the select option](https://user-images.githubusercontent.com/62633136/227818883-44f66220-e5ad-4551-8fff-2006cf3aaa1e.png)
+
 * Desktop view of happy GIF being displayed.
+
 ![displaying giphy on desktop](https://user-images.githubusercontent.com/62633136/227818918-acbba234-883b-464a-bd94-2d624e3e8c83.png)
+
 * Mobile view of sad GIF being dispayed.
+
 ![mboile view with giphy](https://user-images.githubusercontent.com/62633136/227818932-c810a3a3-a1b4-4139-9b3c-c51b19f316d0.png)
+
 * Mobile view of front page.
+
 ![mobile view](https://user-images.githubusercontent.com/62633136/227818959-2da09c17-fdea-4b6f-a6c4-12b8093b0df7.png)
+
 * Mobile view with NAV dropdown burger menu open.
+
 ![mobile view with dropdown menu](https://user-images.githubusercontent.com/62633136/227818968-3f14fb53-286c-4814-931c-2ff994e80873.png)
