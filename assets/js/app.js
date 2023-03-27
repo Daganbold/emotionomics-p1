@@ -91,7 +91,12 @@ function clearData() {
   coinEl.innerHTML = " ";
   coinEl.setAttribute("class", "hideDiv");
 }
-
+// math function to display random giphy image
+function createRandomNumber (max) {
+  let num = Math.random() * max
+  num = Math.floor(num)
+  return num
+}
 // button function to display happy giphy
 function happyButton() {
   let buttonEl = document.createElement("BUTTON");
@@ -102,7 +107,10 @@ function happyButton() {
   buttonEl.addEventListener("click", (event) => {
     event.preventDefault();
     // api call for the happy giphy
-    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=happy`;
+    const offset = createRandomNumber(12)
+    console.log(offset)
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=happy&offset=${offset}`;
+    // added "offset" parameter to display random giphy
     console.log(url);
     fetch(url)
       .then((response) => response.json())
@@ -125,6 +133,7 @@ function happyButton() {
   });
 }
 
+
 // button function to display sad giphy
 function sadButton() {
   let buttonEl = document.createElement("BUTTON");
@@ -135,7 +144,9 @@ function sadButton() {
   buttonEl.addEventListener("click", (event) => {
     event.preventDefault();
     // api call for the sad giphy
-    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=sad`;
+    const offset = createRandomNumber(12)
+    console.log(offset)
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=sad&offset=${offset}`;
     console.log(url);
     fetch(url)
       .then((response) => response.json())
