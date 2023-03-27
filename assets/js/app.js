@@ -4,6 +4,7 @@ let outEl = document.getElementById("out");
 let selectEl = document.getElementById("coinsDropDown");
 let coinEl = document.getElementById("coinChange");
 
+// Api call for the coin information
 var options = {
   method: "GET",
   headers: {
@@ -49,11 +50,11 @@ if (selectEl) {
     console.log(coinChange);
 
     if (coinChange > 1) {
-      coinEl.innerHTML = ` <h2>Your coin change is ${coinChange} now. Get Your Giphy</h2>`;
+      coinEl.innerHTML = ` <h2>Your coin change is <span  class="tag is-success">${coinChange}</span> now. Get Your Giphy</h2>`;
       console.log(" change is +");
       happyButton();
     } else {
-      coinEl.innerHTML = `<h2>Your coin change is ${coinChange} now. Get Your Giphy</h2>`;
+      coinEl.innerHTML = `<h2>Your coin change is <span class="tag is-danger"> ${coinChange}</span> now. Get Your Giphy</h2>`;
       console.log("Change is - ");
       sadButton();
     }
@@ -100,7 +101,7 @@ function happyButton() {
   coinEl.appendChild(buttonEl);
   buttonEl.addEventListener("click", (event) => {
     event.preventDefault();
-
+    // api call for the happy giphy
     let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=happy`;
     console.log(url);
     fetch(url)
@@ -127,13 +128,13 @@ function happyButton() {
 // button function to display sad giphy
 function sadButton() {
   let buttonEl = document.createElement("BUTTON");
-  buttonEl.className = "button is-info is-outlined";
+  buttonEl.className = "button is-danger is-outlined";
   let text = document.createTextNode("Get your Giphy..");
   buttonEl.appendChild(text);
   coinEl.appendChild(buttonEl);
   buttonEl.addEventListener("click", (event) => {
     event.preventDefault();
-
+    // api call for the sad giphy
     let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=sad`;
     console.log(url);
     fetch(url)

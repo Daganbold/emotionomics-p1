@@ -1,4 +1,4 @@
-//navbar
+//navbar toggler
 document.addEventListener("DOMContentLoaded", () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // animation portion of heading
-var words = ["Select your Coin & Know the Value Change & Get your Giphy.."],
+var words = ["Select Your Coin, Know The Value Change & Get Your Giphy.."],
   part,
   i = 0,
   offset = 0,
