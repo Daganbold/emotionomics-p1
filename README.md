@@ -132,7 +132,7 @@ SOFTWARE.
 
 
 # Github URL: 
-  https://github.com/Daganbold/project-01
+ https://github.com/Daganbold/emotionomics-p1
 
 # Deployed Live URL: 
   https://daganbold.github.io/emotionomics-p1/
