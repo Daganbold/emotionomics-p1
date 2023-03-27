@@ -106,26 +106,34 @@ SOFTWARE.
 ## Screenshots
 
 * Desktop view with coin select dropdown.
+![Screenshot 2023-03-27 at 1 10 57 PM](https://user-images.githubusercontent.com/89502092/228056361-8c967666-870b-413b-81fc-cea734576f2b.png)
 
-![desktop view with the select option](https://user-images.githubusercontent.com/62633136/227818883-44f66220-e5ad-4551-8fff-2006cf3aaa1e.png)
+![Screenshot 2023-03-27 at 1 11 29 PM](https://user-images.githubusercontent.com/89502092/228056236-39dfa382-37bf-4f3c-8da0-cc8c6dab5c90.png)
+
 
 * Desktop view of happy GIF being displayed.
+![Screenshot 2023-03-27 at 1 13 08 PM](https://user-images.githubusercontent.com/89502092/228056332-e0de761d-cc8a-477a-b986-e1d2f18cff4a.png)
 
-![displaying giphy on desktop](https://user-images.githubusercontent.com/62633136/227818918-acbba234-883b-464a-bd94-2d624e3e8c83.png)
+![Screenshot 2023-03-27 at 1 12 10 PM](https://user-images.githubusercontent.com/89502092/228056295-bb06e1ee-e750-40a7-9a9b-205193e17e35.png)
+
 
 * Mobile view of sad GIF being dispayed.
 
-![mboile view with giphy](https://user-images.githubusercontent.com/62633136/227818932-c810a3a3-a1b4-4139-9b3c-c51b19f316d0.png)
+![Screenshot 2023-03-27 at 1 14 32 PM](https://user-images.githubusercontent.com/89502092/228056795-eb29f83c-86db-47e5-a55f-22a4855e8774.png)
+
 
 * Mobile view of front page.
 
-![mobile view](https://user-images.githubusercontent.com/62633136/227818959-2da09c17-fdea-4b6f-a6c4-12b8093b0df7.png)
+![Screenshot 2023-03-27 at 1 13 52 PM](https://user-images.githubusercontent.com/89502092/228056456-b0cd7b0a-0d40-4f0c-b7d6-7a251108f3f6.png)
 
 * Mobile view with NAV dropdown burger menu open.
 
-![mobile view with dropdown menu](https://user-images.githubusercontent.com/62633136/227818968-3f14fb53-286c-4814-931c-2ff994e80873.png)
+![Screenshot 2023-03-27 at 1 14 10 PM](https://user-images.githubusercontent.com/89502092/228056534-7ccc383f-2978-445d-b583-7894bd5dd878.png)
 
-# Github URL: https://github.com/Daganbold/project-01
 
-# Deployed Live URL: http://daganbold.github.io/project-01/
+# Github URL: 
+  https://github.com/Daganbold/project-01
+
+# Deployed Live URL: 
+  http://daganbold.github.io/project-01/
 
