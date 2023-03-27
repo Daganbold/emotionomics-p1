@@ -1,4 +1,3 @@
-
 var sign_email = document.getElementById("email");
 var textHere = document.getElementById("textHere");
 var sign_button = document.getElementById("signBtn");
@@ -9,7 +8,7 @@ var emailStore = [];
 function renderSearch() {
   textHere.innerHTML = "";
   for (var i = 0; i < emailStore.length; i++) {
-     emailStore = emailStore[i];
+    emailStore = emailStore[i];
   }
 }
 
