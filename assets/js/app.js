@@ -21,7 +21,7 @@ fetch(
     return response.json();
   })
   .then((objectData) => {
-    // console.log(objectData.data.coins);
+    console.log(objectData.data.coins);
     getData(objectData.data.coins);
   });
 
@@ -172,8 +172,9 @@ function clearGiphy() {
   outEl.innerHTML = " ";
   coinEl.textContent = " ";
   coinEl.setAttribute("class", "hideDiv");
-  option.textContent = " ";
-  selectEl.innerHTML = " ";
+  // option.textContent = " ";
+  //selectEl.value = " ";
+  document.getElementById("coinsDropDown").selectedIndex = 0;
 }
 // choose the coin event listener
 selectEl.addEventListener("change", selectCoin);
