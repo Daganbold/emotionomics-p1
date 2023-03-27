@@ -1,4 +1,4 @@
-$(document).ready (function(){
+
 var emailInput = document.getElementById("email");
 var textHere = document.getElementById("textHere");
 var sign_button = document.getElementById("signBtn");
@@ -89,4 +89,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 sign_button.addEventListener("click", handleFormSubmit);
 init();
-});
