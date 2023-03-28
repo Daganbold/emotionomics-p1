@@ -50,11 +50,11 @@ if (selectEl) {
     console.log(coinChange);
 
     if (coinChange > 1) {
-      coinEl.innerHTML = ` <h2>Your coin change is $ <span  class="tag is-success">${coinChange}</span> now. Get Your Giphy</h2>`;
+      coinEl.innerHTML = ` <h2>Your coin change is <span  class="tag is-success">${coinChange}</span> % now. Get Your Giphy</h2>`;
       console.log(" change is +");
       happyButton();
     } else {
-      coinEl.innerHTML = `<h2>Your coin change is $ <span class="tag is-danger"> ${coinChange}</span> now. Get Your Giphy</h2>`;
+      coinEl.innerHTML = `<h2>Your coin change is  <span class="tag is-danger"> ${coinChange}</span> % now. Get Your Giphy</h2>`;
       console.log("Change is - ");
       sadButton();
     }
