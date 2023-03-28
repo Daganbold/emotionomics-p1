@@ -21,7 +21,7 @@ fetch(
     return response.json();
   })
   .then((objectData) => {
-    console.log(objectData.data.coins);
+    // console.log(objectData.data.coins);
     getData(objectData.data.coins);
   });
 
