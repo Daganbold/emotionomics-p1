@@ -80,7 +80,7 @@ function saveData() {
 function viewData() {
   if (localStorage.getItem("Price_change") !== null) {
     document.getElementById("coinChange").innerHTML =
-      ` <h2>Your Saved Coin Change History From The Local Storage : </h2> ` +
+      ` <h2>Your Saved Coin Change % History From The Local Storage : </h2> ` +
       JSON.parse(localStorage.getItem("Price_change"));
     coinEl.setAttribute("class", "box");
   }
