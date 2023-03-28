@@ -146,6 +146,10 @@ div.hero-inner {
   font-size: 18px;
   padding: 5px;
 }
+p.footerText{
+  text-align: center;
+  color:white;
+}
 /* push the menu to thee end */
 .navbar-menu {
   justify-content: flex-end;
