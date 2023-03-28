@@ -124,6 +124,11 @@ a.navbar-item:hover, a.navbar-link:hover{
  color:#00d1b2;
  text-underline-offset: 5px;
 }
+a.navbar-item:active, a.navbar-link:active{
+  text-decoration: underline 4px;
+  color:red;
+  text-underline-offset: 5px;
+ }
 
 /* padding for inner div of hero div */
 div.hero-inner {
