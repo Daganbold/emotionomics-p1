@@ -112,6 +112,7 @@ p {
   font-family: "Courier New", Courier, monospace;
   padding: 10px;
   font-weight: bold;
+  text-align: left;
 }
 /* make nav bar item and link bold */
 a.navbar-item,
