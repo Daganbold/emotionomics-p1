@@ -39,21 +39,15 @@
             <a class="navbar-item js-modal-trigger" data-target="about">
               About us
             </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> Our Team </a>
-              <div class="navbar-dropdown">
-                <a
-                  class="navbar-item js-modal-trigger"
-                  data-target="team-members"
-                >
-                  Team Members
-                </a>
-                <hr class="navbar-divider" />
-                <a class="navbar-item js-modal-trigger" data-target="contact">
-                  Contact us
-                </a>
-              </div>
-            </div>
+            <a
+            class="navbar-item js-modal-trigger"
+            data-target="team-members"
+          >
+            Team Members
+          </a>
+          <a class="navbar-item js-modal-trigger" data-target="contact">
+            Contact us
+          </a>
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
@@ -73,25 +67,34 @@
 
     <!--Hero image section -->
     <section class="hero-image">
-      <div class="hero-inner">
-        <!-- text animation div -->
-        <div class="header">
+         <!-- text animation div -->
+         <div class="header">
           <h1 class="word"></h1>
         </div>
+        <!-- div holds the h2, p and img element in the home page -->
+      <div id = "heading-1" class="instruction">
+        <div class="item-1">
+          <h2 class="sub-heading title is-1">In the last 24 hours, has either of these things happen to you?</h1>
+            <p class="heading-question subtitle is-5">Did your obscure cryptocurrency finally, after 12 years, gain value and skyrocket from $0.10/coin
+               to $50,000/coin?</p> 
+            <p class="heading-question subtitle is-5">Did your cryptocurrency fall from $60,000/coin to $10,000/coin, a loss of 500%?</p>
+          </div>    
+            <img class = "item-2" src="./assets/images/hero-image.jpeg" alt=" hero image">
+          </div>
         <!-- display Giphy after user click the button -->
         <div class="giphy" id="out"></div>
         <!-- show the coin change message & display button here -->
-        <div id="coinChange" class="hideDiv"></div>
-      </div>
+        <div id="coin-change" class="hide-div"></div>
+     
       <!-- div to hold the user interaction elements -->
-      <div id="userInterface">
+      <div id="user-interface">
         <button class="button" onclick="viewData();">View Value</button>
         <button class="button" onclick="clearData();">Clear All</button>
         <button class="button" onclick="clearGiphy();">Close</button>
         <div class="select is-info">
           <!-- user input as select an option -->
-          <select id="coinsDropDown">
-            <option id="userOption">Select Your Coin</option>
+          <select id="coins-dropdown">
+            <option id="user-option">Select Your Coin</option>
           </select>
         </div>
       </div>
@@ -370,8 +373,8 @@
       </div>
     </div>
     <!--Footer-->
-    <footer class="footerSection">
-      <p class="footerText">&copy; All Rights Reserved Team Pro-3 : 2023</p>
+    <footer class="footer-section">
+      <p class="footer-text">&copy; All Rights Reserved Team Pro-3 : 2023</p>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
