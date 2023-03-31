@@ -81,7 +81,7 @@ img  {
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
-  gap: 10px;
+  gap: 25px;
   flex-wrap: wrap;
   padding-top: 50px;
 
@@ -93,7 +93,7 @@ img  {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   padding: 10px;
 }
