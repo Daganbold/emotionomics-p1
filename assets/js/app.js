@@ -129,6 +129,7 @@ function happyButton() {
         imgEl.setAttribute("class", "giphy-image");
         let figEl = document.createElement("figure");
         let fcEl = document.createElement("figcaption");
+        fcEl.setAttribute('class','figcaption');
         imgEl.src = content.data[0].images.downsized.url;
         imgEl.alt = content.data[0].title;
         fcEl.textContent = content.data[0].title;
@@ -163,6 +164,7 @@ function sadButton() {
         imgEl.setAttribute("class", "giphy-image");
         let figEl = document.createElement("figure");
         let fcEl = document.createElement("figcaption");
+        fcEl.setAttribute('class','figcaption');
         imgEl.src = content.data[0].images.downsized.url;
         imgEl.alt = content.data[0].title;
         fcEl.textContent = content.data[0].title;
