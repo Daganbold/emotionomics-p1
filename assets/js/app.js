@@ -3,7 +3,7 @@ let APIKEY = "2llCfwgKW4oQEdJcS9y7VtaoHJFYb8pG";
 let outEl = document.getElementById("out");
 let selectEl = document.getElementById("coins-dropdown");
 let coinEl = document.getElementById("coin-change");
-let headEl = document.getElementById("heading-1")
+let headEl = document.getElementById("heading-1");
 
 // Api call for the coin information
 var options = {
@@ -30,8 +30,8 @@ fetch(
 function getData(arrayList) {
   for (let i = 0; i < arrayList.length; i++) {
     let option = document.createElement("option");
-     option.setAttribute("value", arrayList[i].change);
-  
+    option.setAttribute("value", arrayList[i].change);
+
     option.setAttribute("id", arrayList[i].id);
 
     let optionText = document.createTextNode(arrayList[i].name);
@@ -55,17 +55,16 @@ if (selectEl) {
       coinEl.innerHTML = ` <h2>Your coin change is <span  class="tag is-success">${coinChange}</span> % now. Get Your Giphy</h2>`;
       console.log(" change is +");
       happyButton();
-      // hide the div when user interacts 
-      headEl.setAttribute('class', 'hide-div');
+      // hide the div when user interacts
+      headEl.setAttribute("class", "hide-div");
     } else {
       coinEl.innerHTML = `<h2>Your coin change is  <span class="tag is-danger"> ${coinChange}</span> % now. Get Your Giphy</h2>`;
       console.log("Change is - ");
       sadButton();
-      // hide the div when user interacts 
-      headEl.setAttribute('class', 'hide-div');
+      // hide the div when user interacts
+      headEl.setAttribute("class", "hide-div");
     }
     saveData();
-
   }
 }
 
@@ -90,7 +89,7 @@ function viewData() {
       ` <h2>Your Saved Coin Change % History From The Local Storage : </h2> ` +
       JSON.parse(localStorage.getItem("Price_change"));
     coinEl.setAttribute("class", "box");
-    headEl.setAttribute('class', 'hide-div');
+    headEl.setAttribute("class", "hide-div");
   }
 }
 // function to clear all stored user data in the local s
@@ -98,7 +97,6 @@ function clearData() {
   localStorage.clear();
   coinEl.innerHTML = " ";
   coinEl.setAttribute("class", "hide-div");
- 
 }
 // math function to display random giphy image
 function createRandomNumber(max) {
@@ -129,7 +127,7 @@ function happyButton() {
         imgEl.setAttribute("class", "giphy-image");
         let figEl = document.createElement("figure");
         let fcEl = document.createElement("figcaption");
-        fcEl.setAttribute('class','figcaption');
+        fcEl.setAttribute("class", "figcaption");
         imgEl.src = content.data[0].images.downsized.url;
         imgEl.alt = content.data[0].title;
         fcEl.textContent = content.data[0].title;
@@ -164,7 +162,7 @@ function sadButton() {
         imgEl.setAttribute("class", "giphy-image");
         let figEl = document.createElement("figure");
         let fcEl = document.createElement("figcaption");
-        fcEl.setAttribute('class','figcaption');
+        fcEl.setAttribute("class", "figcaption");
         imgEl.src = content.data[0].images.downsized.url;
         imgEl.alt = content.data[0].title;
         fcEl.textContent = content.data[0].title;
@@ -187,7 +185,7 @@ function clearGiphy() {
   //selectEl.value = " ";
   document.getElementById("coins-dropdown").selectedIndex = 0;
   // render back headEl when click close button
-  headEl.setAttribute('class', 'instruction');
+  headEl.setAttribute("class", "instruction");
 }
 // choose the coin event listener
 selectEl.addEventListener("change", selectCoin);

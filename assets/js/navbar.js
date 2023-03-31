@@ -21,7 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // animation portion of heading
-var words = ["Select Your Coin,", "Know The Value Change","& Get Your Giphy..!" ];
+var words = [
+  "Select Your Coin,",
+  "Know The Value Change",
+  "& Get Your Giphy..!",
+];
 
 (i = 0),
   (offset = 0),
