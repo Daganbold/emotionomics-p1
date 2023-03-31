@@ -106,29 +106,22 @@ SOFTWARE.
 ## Screenshots
 
 * Desktop view with coin select dropdown.
-![Screenshot 2023-03-27 at 1 10 57 PM](https://user-images.githubusercontent.com/89502092/228056361-8c967666-870b-413b-81fc-cea734576f2b.png)
-
-![Screenshot 2023-03-27 at 1 11 29 PM](https://user-images.githubusercontent.com/89502092/228056236-39dfa382-37bf-4f3c-8da0-cc8c6dab5c90.png)
+![Screenshot 2023-03-30 at 9 58 46 PM](https://user-images.githubusercontent.com/89502092/229027307-ccd9d258-2489-4810-ad0c-16914c037044.png)
 
 
-* Desktop view of happy GIF being displayed.
-![Screenshot 2023-03-27 at 1 13 08 PM](https://user-images.githubusercontent.com/89502092/228056332-e0de761d-cc8a-477a-b986-e1d2f18cff4a.png)
-
-![Screenshot 2023-03-27 at 1 12 10 PM](https://user-images.githubusercontent.com/89502092/228056295-bb06e1ee-e750-40a7-9a9b-205193e17e35.png)
-
-
-* Mobile view of sad GIF being dispayed.
-
-![Screenshot 2023-03-27 at 1 14 32 PM](https://user-images.githubusercontent.com/89502092/228056795-eb29f83c-86db-47e5-a55f-22a4855e8774.png)
+* Desktop view of  GIF being displayed.
+![Screenshot 2023-03-30 at 9 59 18 PM](https://user-images.githubusercontent.com/89502092/229027339-8128d5ef-9b91-4f07-9844-f6bbfc4d478d.png)
 
 
 * Mobile view of front page.
 
-![Screenshot 2023-03-27 at 1 13 52 PM](https://user-images.githubusercontent.com/89502092/228056456-b0cd7b0a-0d40-4f0c-b7d6-7a251108f3f6.png)
+![Screenshot 2023-03-30 at 9 53 07 PM](https://user-images.githubusercontent.com/89502092/229027399-defa7d73-d85f-4038-a6d9-e5500c5a97a4.png)
+
 
 * Mobile view with NAV dropdown burger menu open.
 
-![Screenshot 2023-03-27 at 1 14 10 PM](https://user-images.githubusercontent.com/89502092/228056534-7ccc383f-2978-445d-b583-7894bd5dd878.png)
+![Screenshot 2023-03-30 at 10 02 08 PM](https://user-images.githubusercontent.com/89502092/229027420-f0bf478d-6931-493e-9c4b-2fc0b6f98ebf.png)
+
 
 
 # Github URL: 
