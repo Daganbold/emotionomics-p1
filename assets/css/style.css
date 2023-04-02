@@ -289,13 +289,12 @@ p.footer-text {
   .instruction {
     margin-top: 0 !important;
   }
-  .giphy-image,
-  .image-div{
+  .giphy-image {
     padding: 10px;
     height: 210px;
     width: 370px;
   }
-  .image-div{
+  .image-div {
     padding: 10px;
     height: 210px;
     width: 300px;
