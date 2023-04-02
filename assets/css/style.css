@@ -290,12 +290,12 @@ p.footer-text {
     margin-top: 0 !important;
   }
   .giphy-image,
-  .content {
+  .image-div{
     padding: 10px;
     height: 210px;
     width: 370px;
   }
-  .content-div {
+  .image-div{
     padding: 10px;
     height: 210px;
     width: 300px;
