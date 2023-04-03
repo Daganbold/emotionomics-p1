@@ -1,8 +1,8 @@
 /* body styling */
-body {
+html, body {
   width: 100%;
-  min-height: 100vh;
-  margin: 0;
+  height: 100%;
+  margin: 0 px;
 }
 
 /* h2 styling */
@@ -20,6 +20,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+ 
 }
 /* animated h1 div */
 .heading-div {
@@ -89,6 +90,7 @@ img {
   justify-items: center;
   gap: 15px;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 /* div holds h2,p and img element in the home page */
 .instruction {
@@ -365,7 +367,7 @@ p.footer-text {
   min-width: 280px;
 }
 }
-@media (min-width: 767px )  and (max-width: 992px){
+@media (min-width: 768px )  and (max-width: 1200px){
   div.item-1{
     width:600px;
   }
