@@ -82,6 +82,7 @@ img {
 /* div to hold the button and select option */
 #user-interface {
   margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
