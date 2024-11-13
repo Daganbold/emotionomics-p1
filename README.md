@@ -126,7 +126,7 @@ SOFTWARE.
 
 
 
-# Github URL: 
+# Team Github URL: 
  https://github.com/Daganbold/emotionomics-p1
 
 # Deployed Live URL: 
